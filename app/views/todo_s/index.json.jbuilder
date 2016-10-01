@@ -1,0 +1,1 @@
+json.array! @todo_s, partial: 'todo_s/todo_', as: :todo_

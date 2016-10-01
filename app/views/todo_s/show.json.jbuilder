@@ -1,0 +1,1 @@
+json.partial! "todo_s/todo_", todo_: @todo_

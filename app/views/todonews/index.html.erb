@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Todonews</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Notes</th>
+      <th>Place</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @todonews.each do |todonews| %>
+      <tr>
+        <td><%= todonews.title %></td>
+        <td><%= todonews.notes %></td>
+        <td><%= todonews.place %></td>
+        <td><%= link_to 'Show', todonews %></td>
+        <td><%= link_to 'Edit', edit_todonews_path(todonews) %></td>
+        <td><%= link_to 'Destroy', todonews, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Todonews', new_todonews_path %>

@@ -1,0 +1,2 @@
+class Todonew < ApplicationRecord
+end
